@@ -1,0 +1,40 @@
+.cabecalho-comp{
+
+
+.Cabecalho{
+
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+padding: 10px;
+gap: 10px;
+background-color: #000;
+
+}
+
+ img{
+
+    width: 64px;
+    height: 64px;
+    gap: 0px;
+    opacity: 0px;    
+
+ }
+
+ h1{
+
+    width: 105px;
+    height: 26px;
+    gap: 0px;
+    opacity: 0px;
+    color: #EDF2F4;   
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.78px;
+    text-align: left;
+
+ }
+
+}
