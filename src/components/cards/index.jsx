@@ -1,8 +1,8 @@
 import './index.scss';
 
-export default function Cards({titulo, lista, corPrimaria, corSecundaria}){
+export default function Cards({titulo, lista, corPrimaria, corSecundaria, data, tensdata}){
 
-    let temdata=false
+    let temdata= tensdata
 
     return(
 
@@ -15,15 +15,16 @@ export default function Cards({titulo, lista, corPrimaria, corSecundaria}){
     <div className='card-conteudo'>
         <h3>Assuntos</h3>
         <pre>
-            - {lista}<br />
+             {lista}<br />
         </pre>
     </div>
     { temdata 
-    ? <p className='tag'>26/agosto</p>
-    : <p className='tag'>sem data</p>
+    ? <div className='data'> <p className='tag'>Entrega Trab.</p> <p className='tag'>{data}</p></div>
+    : <div className='data'><p className='tag'>sem data</p></div>
     }
 
 </div>
+
 </div>
 
 

@@ -3,11 +3,14 @@
         .cards {
             display: flex;
             flex-direction: row;
-            
-            border: solid 1px black;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+           
     
             .card {
-                width: 350px;
+                min-width: 300px;
                 height: 260px;
         
                 border-radius: 12px;
@@ -34,18 +37,24 @@
                         text-overflow: ellipsis;
                     }
                 }
-    
-                .tag {
-                    float: right;
-                    margin-right: 12px;
-                    background-color: $destaque;
-                    color: $primaria;
-                    font-weight: bold;
-                    padding: 2px 8px;
-                    width: 120px;
-                    text-align: center;
-                    border-radius: 12px;
+                .data{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                    justify-content: end;
+                    margin-right: 20px;
+                    .tag {
+                  
+                        background-color: $destaque;
+                        color: $primaria;
+                        font-weight: bold;
+                        padding: 2px 8px;
+                        width: 120px;
+                        text-align: center;
+                        border-radius: 12px;
+                    }
                 }
+              
             }
         }
     
